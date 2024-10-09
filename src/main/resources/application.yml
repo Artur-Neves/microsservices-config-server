@@ -1,15 +1,17 @@
 spring:
   application:
     name: config-server
-  profiles:
-    active: native
-#  cloud:
-#    server:
-#      git:
-#        uri: file://${user.home}/config-repo
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Artur-Neves/microsservices-config-server
+          search-paths:
+            - 'greeting_service*'
 #  config:
 #    import:
 server:
   port: 8888
+
 
 
