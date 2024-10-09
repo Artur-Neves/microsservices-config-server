@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+#  cloud:
+#    server:
+#      git:
+#        uri: file://${user.home}/config-repo
+#  config:
+#    import:
+server:
+  port: 8888
+
+
